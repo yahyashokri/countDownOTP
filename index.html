@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Verification</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Phone Number Verification</h2>
+        <form id="phoneForm">
+            <input type="number" id="phoneNumber" placeholder="Enter your phone number" required>
+            <button type="submit" onclick="formSwitch(event)">Submit</button>
+        </form>
+        <form id="otpForm" style="display: none;">
+            <input type="number" id="otp" placeholder="Enter OTP" required>
+            <button type="submit">Verify</button>
+            <button type="button" id="resendButton" onclick="resendButtonF(event)">Resend OTP</button>
+            <div class="countdown" id="countdown"></div>
+        </form>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
